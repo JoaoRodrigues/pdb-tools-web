@@ -1,0 +1,17 @@
+/* Styles for blocks */
+
+.block {
+	display: block;
+	color: white;
+	margin-top: 2px;
+}
+
+.editor {
+	display: block;
+	background-color: #6495ED;
+}
+
+.selector {
+	display: block;
+	background-color: #8B0000;
+}

@@ -1,0 +1,41 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>pdb-tools: the web interface</title>
+  <meta name="description" content="Web interface for the pdb-tools suite.">
+  <meta name="author" content="BonvinLab">
+
+  <link rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="blocks.css">
+</head>
+
+<body>
+
+  <div id='header'>
+    <a>pdb-tools: the web interface</a>
+  </div>
+
+  <div id='buttons'>
+    <a class='section-delimiter'>Actions</a>
+    <button class="action" onclick="addPipeline()">Add new pipeline</button>
+
+    <a class='section-delimiter'>Blocks</a>
+    <ul id='blocks-list'>
+      <li class="block editor" onclick="addItem()">pdb_chain</li>
+      <li class="block selector" onclick="addItem()">pdb_selchain</li>
+      <li class="block selector" onclick="addItem()">pdb_selelem</li>
+    </ul>
+  </div>
+
+  <div id='container'></div>  <!-- Dinamically populated -->
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.1/Sortable.min.js" integrity="sha256-9D6DlNlpDfh0C8buQ6NXxrOdLo/wqFUwEB1s70obwfE=" crossorigin="anonymous"></script>
+  <script src="pipelines.js"></script>
+
+</body>
+</html>
